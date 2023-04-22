@@ -63,7 +63,7 @@
     height: 66rem;
     padding: 0;
   }
-
+  
   .cards {
     display: flex;
     flex-direction: column;

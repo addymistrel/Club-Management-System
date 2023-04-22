@@ -3,11 +3,9 @@ import '@mobiscroll/react/dist/css/mobiscroll.min.css';
 import { Page, Eventcalendar, getJson, Toast } from '@mobiscroll/react';
 import "https://code.iconify.design/1/1.0.4/iconify.min.js";
 import "./calender.css"
-import { useContext } from "react";
-import { themeContext } from "../../Context";
+
 const Calendar = () => {
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
+    
     const [myEvents, setEvents] = React.useState([]);
     const [isToastOpen, setToastOpen] = React.useState(false);
     const [toastText, setToastText] = React.useState();
@@ -37,7 +35,7 @@ const Calendar = () => {
 
     const handlelight = () =>
     {
-        if(darkMode==="light")
+        if(tthheme==="light")
             setTthheme("dark");
         else
             setTthheme("light");

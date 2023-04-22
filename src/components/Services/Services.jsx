@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import switchcard from "../../img/switchcard.png";
+import smccard from "../../img/smccard.png";
+import srccard from "../../img/srccard.jpg";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 
@@ -41,10 +41,9 @@ const Services = () => {
           whileInView={{ left: "14rem" }}
           transition={transition}
         >
-          <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+          <Card 
+          img={smccard}
+          color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
         {/* second card */}
@@ -54,9 +53,8 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+          img={switchcard}
+          color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
         {/* 3rd */}
@@ -66,11 +64,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Humble}
-            heading={"UI/UX"}
-            detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
-            }
+            img={srccard}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>

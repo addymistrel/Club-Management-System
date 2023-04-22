@@ -1,6 +1,6 @@
 .card {
   width: 10rem;
-  height: 13rem;
+  height: 10rem;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@
   box-shadow: var(--boxShadow);
   border-radius: 20px;
   padding: 0px 26px 2rem 26px;
+  justify-content: space-between;
 }
 .card span:nth-of-type(2) {
   color: var(--gray);
@@ -20,16 +21,20 @@
 }
 .card > img {
   transform: scale(0.6);
-  margin-bottom: -2rem;
+    margin-bottom: -2rem;
+    width: 351.8px;
+    margin-top: -56px;
 }
 .c-button {
-    background: #FFFFFF;
+    background: #3bdc53;
     box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
     border-radius: 7px;
     border: none;
     padding: 10px;
     font-size: 16px;
-    color: #5290FD;
+    font-weight: bold;
+    color: #223e6f;
+    font-family: 'Secular One', sans-serif;
 }
 
 .c-button:hover{
