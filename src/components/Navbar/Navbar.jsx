@@ -43,5 +43,4 @@ const navbar = () => {
     </div>
   );
 };
-
 export default navbar;
