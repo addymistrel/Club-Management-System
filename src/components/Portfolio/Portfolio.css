@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 110vh;
 
 }
 /* heading */
@@ -14,9 +14,10 @@
 }
 
 .portfolio span:nth-of-type(2) {
-  color: var(--orange);
+  color: var(--blue);
   font-size: 2.5rem;
   font-weight: bold;
+  font-family: 'Secular One', sans-serif;;
 }
 
 /* slider */

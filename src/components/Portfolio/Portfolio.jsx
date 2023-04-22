@@ -2,19 +2,19 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
 import { themeContext } from "../../Context";
+import srclogo  from "../../img/srclogo.jpg";
+import switchlogo  from "../../img/switchlogo.jpg";
+import sqclogo  from "../../img/sqclogo.jpg";
+import smclogo  from "../../img/smclogo.jpg";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
-      <span>Portfolio</span>
+      <span style={{color: darkMode?'white': ''}}>Explore Clubs at</span>
+      <span>Silicon</span>
 
       {/* slider */}
       <Swiper
@@ -24,16 +24,24 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <a href = "/">
+            <img src={srclogo} alt=""/>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+        <a href = "/">
+          <img src={switchlogo} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+        <a href = "/">
+          <img src={sqclogo} alt="" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+        <a href = "/">
+          <img src={smclogo} alt="" />
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>
