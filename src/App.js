@@ -23,10 +23,10 @@ function App() {
     >
       <Navbar />
       <Intro />
+      <Portfolio />
       <Services />
       <Experience />
       <Works />
-      <Portfolio />
       <Contact />
       <Footer />
     </div>
