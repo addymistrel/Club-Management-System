@@ -2,9 +2,10 @@
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 80vh;
-    margin-top: 4rem;
+    margin-top: 1rem;
       /* scroll */
-  padding-top: 3rem;
+    padding-top: 3rem;
+   
 }
 
 .c-right{
@@ -12,6 +13,7 @@
     justify-content: center;
     position: relative;
     flex: 1;
+    
 }
 
 .c-right>form
@@ -28,7 +30,7 @@
     height: 2rem;
     padding: 0.3em;
     outline: none;
-    border: 2px solid var(--orange);
+    border: 2px solid var(--blue);
     border-radius: 8px;
     font-size: 16px;   
 }
@@ -42,6 +44,11 @@ textarea{
     left: 8rem;
 }
 
+.ContactText{
+    color: #7010d3;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 @media screen and (max-width: 480px) {
     .contact-form{
         padding: 0;
