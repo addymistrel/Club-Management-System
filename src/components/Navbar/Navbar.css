@@ -32,13 +32,21 @@
   display: flex;
   gap: 2rem;
   margin-right: 4rem;
+  font-family: 'Secular One', sans-serif;
 }
 
 .n-list > ul :hover {
-  color: var(--orange);
+  color: var(--blue);
   cursor: pointer;
+  font-family: 'Secular One', sans-serif;
+}
+.navbarlist{
+  list-style: none;
 }
 
+.navbaritems{
+  font-family: 'Secular One', sans-serif;
+}
 .n-button {
   flex: 2;
 }
