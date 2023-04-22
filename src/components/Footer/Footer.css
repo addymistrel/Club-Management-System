@@ -1,9 +1,9 @@
 .footer {
   display: flex;
-  align-items: center;
-  margin: -0.5rem -3.5rem;
-  position: relative;
-  margin-top: -7rem;
+    align-items: center;
+    margin: -9.5rem -3.5rem;
+    position: relative;
+    margin-top: -12rem;
 }
 .f-content {
   position: absolute;
@@ -12,13 +12,21 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 4rem;
-  gap: 4rem;
+  margin-top: 1rem;
+  gap: 1rem;
   color: white;
+  margin-bottom: 40px;
 }
 .f-icons {
   display: flex;
   gap: 2rem;
+}
+.ConnectText{
+  color:black;
+  font-weight: bold;
+  padding: 20px;
+  background-color: rgb(221 220 234);
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 480px){
