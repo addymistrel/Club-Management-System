@@ -13,7 +13,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-
+import Calendar from "../Calender/calender";
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -46,12 +46,17 @@ const Intro = () => {
         </div>
       </div>
       {/* right image side */}
-      <div className="i-right">
-        <img src={Vector1} alt="" />
+      
+
+      <div className="calenderr">
+        {/* <div className="containerr"> */}
+          <Calendar/>
+        {/* </div> */}
+        {/* <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={boy} alt="" /> */}
         {/* animation */}
-        <motion.img
+        {/* <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
@@ -66,18 +71,18 @@ const Intro = () => {
           className="floating-div"
         >
           <FloatinDiv img={crown} text1="Web" text2="Developer" />
-        </motion.div>
+        </motion.div> */}
 
         {/* animation */}
-        <motion.div
+        {/* <motion.div
           initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
           className="floating-div"
-        >
+        > */}
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
-        </motion.div>
+          {/* <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+        </motion.div> */}
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div

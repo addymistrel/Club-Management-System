@@ -92,6 +92,21 @@
   left: 56%;
   filter: blur(72px);
 }
+/* .containerr
+{
+  
+} */
+.calenderr{
+  position: absolute;
+  top: 5rem;
+  left: 48rem;
+  overflow-y: scroll;
+  height: 28rem;
+  width: 20rem;
+}
+
+
+
 
 @media screen and (max-width: 480px) {
   .Intro {

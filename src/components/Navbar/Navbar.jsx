@@ -21,24 +21,24 @@ const Navbar = () => {
       {/* right */}
       <div className="n-right">
         <div className="n-list">
-          <ul style={{ listStyleType: "none" }}>
+          <ul className = "navbarlist">
             <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+              <Link activeClass="active" to="Navbar" spy={true} smooth={true} className="navbaritems">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="services" spy={true} smooth={true}>
+              <Link to="services" spy={true} smooth={true} className="navbaritems">
                 About
               </Link>
             </li>
             <li>
-              <Link to="works" spy={true} smooth={true}>
+              <Link to="works" spy={true} smooth={true} className="navbaritems">
                 Clubs
               </Link>
             </li>
             <li>
-              <Link to="contact" spy={true} smooth={true}>
+              <Link to="contact" spy={true} smooth={true} className="navbaritems">
                 Contact
               </Link>
             </li>
