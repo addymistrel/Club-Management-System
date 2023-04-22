@@ -25,7 +25,6 @@ function App() {
       <Intro />
       <Portfolio />
       <Services />
-      <Experience />
       <Works />
       <Contact />
       <Footer />
