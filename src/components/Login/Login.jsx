@@ -1,17 +1,21 @@
 import React from 'react'
 import {Helmet} from 'react-helmet';
 import "./Login.css"
+
 const Login = ()=> {
   return (
     <>
-    <div class="login" id="login">
+    <Helmet>
+        <link  href="./Login.css" rel="stylesheet"/>
+    </Helmet>
+    <div className="login" id="login">
   <h2>Login</h2>
   <form>
-    <div class="user-box">
+    <div className="user-box">
       <input type="text" name="" required=""/>
       <label>Username</label>
     </div>
-    <div class="user-box">
+    <div className="user-box">
       <input type="password" name="" required=""/>
       <label>Password</label>
     </div>

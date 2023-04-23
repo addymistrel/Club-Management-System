@@ -5,6 +5,7 @@ import "https://code.iconify.design/1/1.0.4/iconify.min.js";
 import "./calender.css"
 import { useContext } from "react";
 import { themeContext } from "../../Context";
+import { useEffect } from 'react';
 const Calendar = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
@@ -12,6 +13,18 @@ const Calendar = () => {
     const [isToastOpen, setToastOpen] = React.useState(false);
     const [toastText, setToastText] = React.useState();
     const [tthheme,setTthheme] = React.useState("light");
+
+
+    useEffect(() => {
+        if(darkMode===true)
+        {
+            setTthheme("light");
+        }
+        else{
+            setTthheme("dark");
+        }
+    },[darkMode])
+
 
     React.useEffect(() => {
         getJson('https://trial.mobiscroll.com/events/?vers=5', (events) => {
@@ -33,15 +46,8 @@ const Calendar = () => {
             calendar: { type: 'month' },
             agenda: { type: 'month' }
         };
+        
     }, []);
-
-    const handlelight = () =>
-    {
-        if(darkMode==="light")
-            setTthheme("dark");
-        else
-            setTthheme("light");
-    }
 
     return <Page>
         
