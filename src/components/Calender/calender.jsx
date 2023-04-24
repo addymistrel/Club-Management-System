@@ -7,7 +7,8 @@ import { useContext } from "react";
 import { themeContext } from "../../Context";
 import { useEffect } from 'react';
 const Calendar = () => {
-    
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
     const [myEvents, setEvents] = React.useState([]);
     const [isToastOpen, setToastOpen] = React.useState(false);
     const [toastText, setToastText] = React.useState();
