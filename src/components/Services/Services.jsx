@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
 import switchcard from "../../img/switchcard.png";
-import smccard from "../../img/smccard.png";
+import smccard from "../../img/smccard.jpg";
 import srccard from "../../img/srccard.jpg";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
