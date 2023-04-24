@@ -30,8 +30,8 @@
 }
 .n-list > ul {
   display: flex;
-  gap: 2rem;
-  margin-right: 4rem;
+  gap: 2.5rem;
+  margin-right: 2rem;
   font-family: 'Secular One', sans-serif;
 }
 
@@ -46,6 +46,7 @@
 
 .navbaritems{
   font-family: 'Secular One', sans-serif;
+  margin-left: -17px;
 }
 .n-button {
   flex: 2;

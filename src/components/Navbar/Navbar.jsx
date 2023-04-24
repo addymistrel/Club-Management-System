@@ -3,6 +3,7 @@ import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const navigate = useNavigate();
   const handlelogin = () =>
@@ -40,6 +41,11 @@ const Navbar = () => {
             <li>
               <Link to="contact" spy={true} smooth={true} className="navbaritems">
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="" spy={true} smooth={true} className="navbaritems">
+                Dropdown
               </Link>
             </li>
           </ul>
