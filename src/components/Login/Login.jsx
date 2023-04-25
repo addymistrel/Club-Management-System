@@ -6,7 +6,7 @@ import {auth} from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import Navbar from "../Navbar/Navbar"
 const Login = () => {
   const navigate = useNavigate();
   const [errormsg,setErrormsg] = useState("");
@@ -36,11 +36,8 @@ const Login = () => {
 
   return (
     <>
-    <div className="n-left1">
-        <div className="n-name1">
-        <img src="https://silicon.ac.in/wp-content/themes/sit/assets/img/sit-logo.svg" alt="a" />
-        </div>
-      </div>
+    <Navbar/>
+    
     <img className="imgbg" src={pic} alt="a"/>
     <Helmet>
         <link  href="./Login.css" rel="stylesheet"/>
