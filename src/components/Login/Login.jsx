@@ -6,6 +6,12 @@ import pic from "../../img/bglogin.jpg"
 const Login = () => {
   return (
     <>
+    <div className="n-left1">
+        <div className="n-name1">
+        <img src="https://silicon.ac.in/wp-content/themes/sit/assets/img/sit-logo.svg" alt="a" />
+        </div>
+      </div>
+    <img className="imgbg" src={pic} alt="a"/>
     <Helmet>
         <link  href="./Login.css" rel="stylesheet"/>
     </Helmet>

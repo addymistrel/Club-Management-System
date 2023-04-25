@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Intro.css";
 // import Vector1 from "../../img/Vector1.png";
 // import Vector2 from "../../img/Vector2.png";
@@ -7,27 +7,29 @@ import "./Intro.css";
 // import thumbup from "../../img/thumbup.png";
 // import crown from "../../img/crown.png";
 // import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
-import { themeContext } from "../../Context";
+// import Github from "../../img/github.png";
+// import LinkedIn from "../../img/linkedin.png";
+// import Instagram from "../../img/instagram.png";
+// import { themeContext } from "../../Context";
+import News from "../News/news";
 // import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import Calendar from "../Calender/calender";
 const Intro = () => {
   // Transition
   // const transition = { duration: 2, type: "spring" };
 
   // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  // const theme = useContext(themeContext);
+  // const darkMode = theme.state.darkMode;
 
   return (
     <div className="Intro" id="Intro">
       {/* left name side */}
       <div className="i-left">
-        <div className="i-name">
-          {/* yahan change hy darkmode ka */}
+        <News/>
+        {/* <div className="i-name">
+          yahan change hy darkmode ka
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Andrew Thomas</span>
           <span>
@@ -37,13 +39,13 @@ const Intro = () => {
         </div>
         <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
-        </Link>
+        </Link> */}
         {/* social icons */}
-        <div className="i-icons">
+        {/* <div className="i-icons">
           <img src={Github} alt="" />
           <img src={LinkedIn} alt="" />
           <img src={Instagram} alt="" />
-        </div>
+        </div> */}
       </div>
       {/* right image side */}
       
