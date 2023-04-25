@@ -9,7 +9,7 @@ function App()
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/google" Component={() => {window.location.href = 'https://www.google.com/';return null;}}/>
+        <Route path="/google" Component={() => {window.location.replace('https://google.com')}}/>
       </Routes>
     </>
   )
