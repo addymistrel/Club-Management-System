@@ -2,15 +2,12 @@ import React from 'react'
 import {Helmet} from 'react-helmet';
 import "./Login.css"
 import pic from "../../img/bglogin.jpg"
-
+import Navbar from "../Navbar/Navbar"
 const Login = () => {
   return (
     <>
-    <div className="n-left1">
-        <div className="n-name1">
-        <img src="https://silicon.ac.in/wp-content/themes/sit/assets/img/sit-logo.svg" alt="a" />
-        </div>
-      </div>
+    <Navbar/>
+    
     <img className="imgbg" src={pic} alt="a"/>
     <Helmet>
         <link  href="./Login.css" rel="stylesheet"/>
