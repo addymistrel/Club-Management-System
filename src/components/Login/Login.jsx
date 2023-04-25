@@ -2,8 +2,38 @@ import React from 'react'
 import {Helmet} from 'react-helmet';
 import "./Login.css"
 import pic from "../../img/bglogin.jpg"
+import {auth} from "../../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [errormsg,setErrormsg] = useState("");
+  const [values,setValues] = useState({
+    email:"",
+    pass:"",
+  });
+
+  function loginuser(){
+  signInWithEmailAndPassword(auth,values.email,values.pass).then(
+    (res)=>{
+      // setsubmitButtonDisabled(false);
+      // let str = values.email.replace(".com","");
+      // pushId(str);
+      navigate("/google");
+    })
+    .catch((err)=>{
+      setErrormsg(err.message);
+    });
+  }
+  const handleSubmit = (e) =>
+  {
+    e.preventDefault();
+    console.log(values.email, values.pass);
+    loginuser();
+  }
+
   return (
     <>
     <div className="n-left1">
@@ -19,20 +49,21 @@ const Login = () => {
   <h2>Login</h2>
   <form>
     <div className="user-box">
-      <input type="text" name="" required=""/>
+      <input type="text" name="" required="" onChange={event=> setValues((prev)=>({...prev,email:event.target.value}))}/>
       <label>Username</label>
     </div>
     <div className="user-box">
-      <input type="password" name="" required=""/>
+      <input type="password" name="" required="" onChange={event=> setValues((prev)=>({...prev,pass:event.target.value}))}/>
       <label>Password</label>
     </div>
-    <a href="/">
+    <b className="error">{errormsg}</b>
+    <button onClick={handleSubmit}>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
       Submit
-    </a>
+    </button>
   </form>
 </div>
     </>
