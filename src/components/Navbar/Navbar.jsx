@@ -10,6 +10,7 @@ const Navbar = () => {
   {
     navigate(`/login`);
   }
+  const some="------"
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
@@ -45,7 +46,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="" spy={true} smooth={true} className="navbaritems">
-                Dropdown
+                {some}
               </Link>
             </li>
           </ul>
