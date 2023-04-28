@@ -8,13 +8,26 @@ import Portfolio from "./components/Portfolio/Portfolio";
 // import Testimonial from "./components/Testimonials/Testimonial";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { themeContext } from "./Context";
+import { useLocation } from "react-router-dom";
+import Navbarafter from "./components/Navbarafter/Navbarafter";
 // import Login from "./components/Login/Login";
 // import { Route,Routes } from "react-router-dom";
 function Home() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const location=useLocation();
+  const [state,setState]=useState(false);
+  useEffect(()=>{
+    console.log(location.state)
+    console.log(state)
+    if(location.state!==null && location.state===true)
+      setState(true);
+    else if(location.state===null || location.state===false)  
+      setState(false);
+  },[location.state])
+  console.log(state);
   return (
     <>
     <div
@@ -25,7 +38,7 @@ function Home() {
       }}
     >
       
-      <Navbar />
+      {(state===false)?<Navbar/>:<Navbarafter/>}
       <Intro />
       <Portfolio />
       <Services />

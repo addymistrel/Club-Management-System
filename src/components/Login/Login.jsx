@@ -14,14 +14,13 @@ const Login = () => {
     email:"",
     pass:"",
   });
-
   function loginuser(){
   signInWithEmailAndPassword(auth,values.email,values.pass).then(
     (res)=>{
       // setsubmitButtonDisabled(false);
       // let str = values.email.replace(".com","");
       // pushId(str);
-      navigate("/google");
+      navigate("/",{state:true});
     })
     .catch((err)=>{
       setErrormsg(err.message);

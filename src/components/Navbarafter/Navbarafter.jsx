@@ -1,14 +1,14 @@
-import React from "react";
 import Toggle from "../Toggle/Toggle";
-import "./Navbar.css";
+import "./Navbarafter.css";
 import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbarafter = () => {
   const navigate = useNavigate();
-  const handlelogin = () =>
+  const handlelogout = () =>
   {
-    navigate(`/login`);
+    alert("We appreciate your kind presence !")
+    navigate("/",{state:false});
   }
   return (
     <div className="n-wrapper" id="Navbar">
@@ -50,10 +50,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button className="button n-button" onClick={handlelogin}>Login</button>
+        <button className="button n-button" onClick={handlelogout}>Logout</button>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default Navbarafter;
